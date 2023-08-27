@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box {
+      height: 100px;
+      width: 100px;
+      border: 1px solid;
+    }
+
+    .box {
+      background-color: antiquewhite !important;
+    }
+    div {
+      background-color: red;
+    }
+    div {
+      background-color: cyan;
+    }
+  </style>
+  <body>
+    <h1>specifity score</h1>
+    <div class="box red" style="background-color: blue">box-1</div>
+    <div class="box">box-2</div>
+    <div class="box">box-3</div>
+    <div class="box">box-4</div>
+    <div class="box">box-5</div>
+
+    <div class="red">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto tenetur
+        aliquid, sed cum aperiam ducimus esse, recusandae quod similique illum,
+        officiis incidunt ut. Delectus est, consequatur porro sunt recusandae
+        eius.
+      </p>
+    </div>
+    <p class="red">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto tenetur
+      aliquid, sed cum aperiam ducimus esse, recusandae quod similique illum,
+      officiis incidunt ut. Delectus est, consequatur porro sunt recusandae
+      eius.
+    </p>
+  </body>
+</html>
