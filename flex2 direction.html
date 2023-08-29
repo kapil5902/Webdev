@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .parent {
+        height: 400px;
+        width: 400px;
+        background-color: teal;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-between;
+      }
+      .child {
+        background-color: cyan;
+        height: 100px;
+        width: 100px;
+        border: 1px solid;
+      }
+      .header {
+        display: flex;
+        justify-content: start;
+      }
+      a {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <p>Logo</p>
+      <ul>
+        <li>
+          <a href="#">home</a>
+        </li>
+        <li>
+          <a href="#">about </a>
+        </li>
+      </ul>
+      <ul>
+        <li>sign in</li>
+        <li>sign up</li>
+      </ul>
+    </header>
+    <div class="parent">
+      <div class="child">child1</div>
+      <div class="child">child2</div>
+      <div class="child">child3</div>
+      <div class="child">child4</div>
+      <div class="child">child5</div>
+      <div class="child">child6</div>
+      <!-- <div class="child">child7</div>
+      <div class="child">child8</div>  -->
+    </div>
+  </body>
+</html>

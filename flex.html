@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    ul {
+      border: 1px solid;
+      padding: 1rem;
+      display: flex;
+      gap: 1rem;
+      /* justify-content: space-between; */
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .flexbox {
+      background-color: antiquewhite;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      align-items: center;
+    }
+    .flex-item {
+      height: 100px;
+      width: 100px;
+      border: 1px solid;
+    }
+  </style>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+
+    <div class="parent flexbox">
+      <div class="child flex-item">flex-item1</div>
+      <div class="child flex-item">flex-item2</div>
+      <div class="child flex-item">flex-item3</div>
+    </div>
+  </body>
+</html>
