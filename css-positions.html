@@ -11,24 +11,23 @@
         box-sizing: border-box;
         /* color: antiquewhite; */
       }
-
-      header {
-        padding: 1rem;
-        border: 1px solid;
-        display: flex;
-        justify-content: space-between;
-        position: sticky;
-        top: 0;
-        background-color: cyan;
-      }
-      header ul {
-        display: flex;
-        list-style-type: none;
-        gap: 1rem;
-      }
       p {
-        width: 100px;
+        width: 50%;
       }
+      header {
+        position: sticky;
+        position: sticky;
+        top: 0px;
+        z-index: 4;
+      }
+
+      nav {
+        height: 50px;
+        background-color: #333;
+        color: white;
+        font: 24px;
+      }
+
       .box {
         height: 100px;
         width: 100px;
@@ -40,74 +39,192 @@
       .relative {
         position: relative;
         left: 100px;
-        /* margin-top: 100px; */
-        /* top: 100px; */
+        top: 10px;
+        background-color: white;
       }
       .absolute {
         position: absolute;
         background-color: red;
         right: 0;
+        top: 100px;
       }
       .fixed {
         position: fixed;
         background-color: orange;
-        bottom: 100px;
-        right: 100px;
+        bottom: 50px;
+        right: 50px;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
       }
       .sticky {
         position: sticky;
         background-color: teal;
-        top: 0px;
+        top: 200px;
+      }
+      .parent {
+        border: 2px solid black;
+        padding: 1rem;
+        position: relative;
+      }
+      .small-box {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: orange;
+        right: 1rem;
+        top: 1rem;
+      }
+
+      .two {
+        z-index: 3;
+        right: 50px;
+        background-color: blue;
+      }
+      .three {
+        z-index: 2;
+        right: 100px;
+        background-color: cyan;
+      }
+      .wrapper {
+        border: 1px solid red;
+        padding: 1rem;
+        margin-bottom: 1rem;
       }
     </style>
   </head>
   <body>
-    <header>
-      <p>logo</p>
-      <ul>
-        <li><a href="#">home</a></li>
-        <li><a href="#">about</a></li>
-      </ul>
-      <ul>
-        <li>register</li>
-        <li>login</li>
-      </ul>
-    </header>
+    <header><nav>home about</nav></header>
+
     <h1>css positions</h1>
 
     <div class="box static">static</div>
     <div class="box relative">relative</div>
     <div class="box absolute">absolute</div>
-    <div class="box fixed">fixed</div>
-    <div class="box sticky">sticky</div>
+    <div class="box absolute two">absolute two</div>
+    <div class="box absolute three">absolute three</div>
+    <div class="box fixed">top</div>
+    <div class="wrapper">
+      <div class="box sticky">sticky</div>
+      <div class="description">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+          mollitia modi quo impedit cum qui, quibusdam odio laboriosam quod
+          repellat exercitationem ipsam, commodi veniam nam delectus sunt vel
+          culpa. Veritatis fuga perspiciatis odit unde dolorum dignissimos
+          obcaecati distinctio doloremque nobis. Illum laborum nobis commodi
+          atque doloribus provident, ad eaque officia voluptatum explicabo
+          laudantium neque exercitationem quod inventore. Alias tempore esse
+          dolorem debitis numquam unde ad earum similique incidunt, deserunt
+          quasi aliquid laudantium, a enim quos sint assumenda, asperiores autem
+          consectetur! Soluta repudiandae tempore alias ea vero quaerat sed
+          nihil at dolore, voluptas necessitatibus quae ut eum expedita totam.
+          Doloremque, dolorem!
+        </p>
+      </div>
+    </div>
+
+    <div class="parent">
+      <div class="child">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum sint
+          dolorem velit nemo perferendis explicabo, id omnis doloremque eos modi
+          in dignissimos illo nesciunt ex qui quos tenetur corporis natus?
+        </p>
+      </div>
+      <div class="box small-box">parent>box</div>
+    </div>
 
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illo
-      consequuntur corporis quo veniam amet earum optio velit corrupti nemo?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam
+      laborum rem debitis nesciunt, commodi exercitationem eveniet, voluptatum
+      excepturi, libero voluptas! Deleniti magnam aut quas aliquam soluta iusto
+      blanditiis asperiores cum ullam quae aliquid odit fugiat atque a
+      quibusdam, ex est maxime repellat fuga porro dolore voluptatibus. Impedit,
+      cum voluptatem?
     </p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illo
-      consequuntur corporis quo veniam amet earum optio velit corrupti nemo?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam
+      laborum rem debitis nesciunt, commodi exercitationem eveniet, voluptatum
+      excepturi, libero voluptas! Deleniti magnam aut quas aliquam soluta iusto
+      blanditiis asperiores cum ullam quae aliquid odit fugiat atque a
+      quibusdam, ex est maxime repellat fuga porro dolore voluptatibus. Impedit,
+      cum voluptatem?
     </p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illo
-      consequuntur corporis quo veniam amet earum optio velit corrupti nemo?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam
+      laborum rem debitis nesciunt, commodi exercitationem eveniet, voluptatum
+      excepturi, libero voluptas! Deleniti magnam aut quas aliquam soluta iusto
+      blanditiis asperiores cum ullam quae aliquid odit fugiat atque a
+      quibusdam, ex est maxime repellat fuga porro dolore voluptatibus. Impedit,
+      cum voluptatem?
     </p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illo
-      consequuntur corporis quo veniam amet earum optio velit corrupti nemo?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam
+      laborum rem debitis nesciunt, commodi exercitationem eveniet, voluptatum
+      excepturi, libero voluptas! Deleniti magnam aut quas aliquam soluta iusto
+      blanditiis asperiores cum ullam quae aliquid odit fugiat atque a
+      quibusdam, ex est maxime repellat fuga porro dolore voluptatibus. Impedit,
+      cum voluptatem?
     </p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illo
-      consequuntur corporis quo veniam amet earum optio velit corrupti nemo?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam
+      laborum rem debitis nesciunt, commodi exercitationem eveniet, voluptatum
+      excepturi, libero voluptas! Deleniti magnam aut quas aliquam soluta iusto
+      blanditiis asperiores cum ullam quae aliquid odit fugiat atque a
+      quibusdam, ex est maxime repellat fuga porro dolore voluptatibus. Impedit,
+      cum voluptatem?
     </p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illo
-      consequuntur corporis quo veniam amet earum optio velit corrupti nemo?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam
+      laborum rem debitis nesciunt, commodi exercitationem eveniet, voluptatum
+      excepturi, libero voluptas! Deleniti magnam aut quas aliquam soluta iusto
+      blanditiis asperiores cum ullam quae aliquid odit fugiat atque a
+      quibusdam, ex est maxime repellat fuga porro dolore voluptatibus. Impedit,
+      cum voluptatem?
     </p>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illo
-      consequuntur corporis quo veniam amet earum optio velit corrupti nemo?
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam
+      laborum rem debitis nesciunt, commodi exercitationem eveniet, voluptatum
+      excepturi, libero voluptas! Deleniti magnam aut quas aliquam soluta iusto
+      blanditiis asperiores cum ullam quae aliquid odit fugiat atque a
+      quibusdam, ex est maxime repellat fuga porro dolore voluptatibus. Impedit,
+      cum voluptatem?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam
+      laborum rem debitis nesciunt, commodi exercitationem eveniet, voluptatum
+      excepturi, libero voluptas! Deleniti magnam aut quas aliquam soluta iusto
+      blanditiis asperiores cum ullam quae aliquid odit fugiat atque a
+      quibusdam, ex est maxime repellat fuga porro dolore voluptatibus. Impedit,
+      cum voluptatem?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam
+      laborum rem debitis nesciunt, commodi exercitationem eveniet, voluptatum
+      excepturi, libero voluptas! Deleniti magnam aut quas aliquam soluta iusto
+      blanditiis asperiores cum ullam quae aliquid odit fugiat atque a
+      quibusdam, ex est maxime repellat fuga porro dolore voluptatibus. Impedit,
+      cum voluptatem?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam
+      laborum rem debitis nesciunt, commodi exercitationem eveniet, voluptatum
+      excepturi, libero voluptas! Deleniti magnam aut quas aliquam soluta iusto
+      blanditiis asperiores cum ullam quae aliquid odit fugiat atque a
+      quibusdam, ex est maxime repellat fuga porro dolore voluptatibus. Impedit,
+      cum voluptatem?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam
+      laborum rem debitis nesciunt, commodi exercitationem eveniet, voluptatum
+      excepturi, libero voluptas! Deleniti magnam aut quas aliquam soluta iusto
+      blanditiis asperiores cum ullam quae aliquid odit fugiat atque a
+      quibusdam, ex est maxime repellat fuga porro dolore voluptatibus. Impedit,
+      cum voluptatem?
     </p>
   </body>
 </html>

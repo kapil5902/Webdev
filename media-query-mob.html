@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .projects {
+        display: flex;
+        gap: 1rem;
+      }
+      .project {
+        border: 1px solid;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        margin-bottom: 1rem;
+      }
+      .project img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      @media (min-width: 640px) {
+        .projects {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .project {
+          width: 50%;
+          flex-wrap: wrap;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Projects...</h1>
+    <div class="projects">
+      <div class="project">
+        <img src="https://picsum.photos/200/300" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+          praesentium provident odit maiores deserunt aliquid minus dolorum
+          voluptates commodi cupiditate in labore quo ipsam officiis
+          exercitationem, velit nostrum accusantium neque.
+        </p>
+      </div>
+      <div class="project">
+        <img src="https://picsum.photos/200/300" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+          praesentium provident odit maiores deserunt aliquid minus dolorum
+          voluptates commodi cupiditate in labore quo ipsam officiis
+          exercitationem, velit nostrum accusantium neque.
+        </p>
+      </div>
+      <div class="project">
+        <img src="https://picsum.photos/200/300" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+          praesentium provident odit maiores deserunt aliquid minus dolorum
+          voluptates commodi cupiditate in labore quo ipsam officiis
+          exercitationem, velit nostrum accusantium neque.
+        </p>
+      </div>
+      <div class="project">
+        <img src="https://picsum.photos/200/300" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+          praesentium provident odit maiores deserunt aliquid minus dolorum
+          voluptates commodi cupiditate in labore quo ipsam officiis
+          exercitationem, velit nostrum accusantium neque.
+        </p>
+      </div>
+      <div class="project">
+        <img src="https://picsum.photos/200/300" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
+          praesentium provident odit maiores deserunt aliquid minus dolorum
+          voluptates commodi cupiditate in labore quo ipsam officiis
+          exercitationem, velit nostrum accusantium neque.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
