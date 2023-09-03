@@ -10,7 +10,7 @@
         box-sizing: border-box;
       }
       .projects {
-        display: flex;
+        display: grid;
         gap: 1rem;
       }
       .project {
@@ -27,23 +27,27 @@
       }
       @media (min-width: 640px) {
         .projects {
-          display: flex;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
         }
       }
-      /* @media (min-width: 640px) {
+      @media (min-width: 1024px) {
         .projects {
-          display: flex;
-          flex-wrap: wrap;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-columns: repeat(4, 1fr);
         }
-        .project {
-          width: 50%;
-          flex-wrap: wrap;
+      }
+      @media (min-width: 1280px) {
+        .projects {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
         }
-      } */
+      }
     </style>
   </head>
   <body>
-    <h1>Projects...</h1>
+    <h1>Projects.</h1>
     <div class="projects">
       <div class="project">
         <img src="https://picsum.photos/200/300" alt="" />

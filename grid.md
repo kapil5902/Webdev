@@ -25,21 +25,6 @@
         object-fit: cover;
         object-position: center;
       }
-      @media (min-width: 640px) {
-        .projects {
-          display: flex;
-        }
-      }
-      /* @media (min-width: 640px) {
-        .projects {
-          display: flex;
-          flex-wrap: wrap;
-        }
-        .project {
-          width: 50%;
-          flex-wrap: wrap;
-        }
-      } */
     </style>
   </head>
   <body>
