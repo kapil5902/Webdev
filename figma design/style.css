@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+a{
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+}
+ul{
+  list-style: none;
+}
+:root{
+  --primary-color:#f53855;
+}
+
+body{
+  color: #4f5665;
+  font-family: 'Rubik', sans-serif;
+  border: 1px solid red;
+}
+header{
+  margin-top: 3rem;
+
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrapper{
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+.logo-wrapper p{
+  font-size: 20px;
+  color: #0b132a;
+}
+.nav-links a:hover{
+  color: #f53855;
+
+}
+
+.font-md{
+  font-weight: 500;
+}
+.font-bold{
+  font-weight: 700
+  ;
+}
+.nav-links a:hover{
+  color: var(--primary-color);
+}
+nav ul{
+  display: flex;
+  gap: 2.5rem;
+  
+}
+
+.container{
+  padding-left: .75rem;
+  padding-right: .75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn{
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+}
+
+.btn.outline{
+  border: 1px solid #f53855;
+  background-color: transparent;
+  color: #f53855;
+
+}
+.btn.outline:hover{
+  background-color: #f53855;
+  color: white;
+  box-shadow: 4px 3px 15px #f53855;
+}
+.btn.transparent{
+  border: none;
+  color: #0b132a;
+  background-color: transparent;
+  font-weight: 500;
+}
+.banner{
+  display: flex;
+  margin-top: 5.5rem;
+}
+
+.banner .motto{
+  font-size: 50px;
+  color: #0b132a;
+  margin-bottom: 1rem;
+}
+.banner button{
+  margin-top: 3rem;
+}
+.btn.wider{
+  border-radius: .5rem
+  ;
+}
+.btn.shadow{
+  border-radius: .5rem;
+  box-shadow: 4px 3px 15px #f53855;
+}
+@media(min-width:1200px){
+  .container{
+    max-width: 1140px;
+  }
+}
+
+@media(min-width:1400px){
+  .container{
+    /* background-color: beige; */
+    max-width: 1320px;
+  
+
+  }
+  
+
+}
