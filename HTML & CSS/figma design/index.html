@@ -22,17 +22,32 @@
             ><span class="font-bold">VPN</span>
           </p>
         </div>
-        <ul class="nav-links">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Feature</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Testimonial</a></li>
-          <li><a href="#">Help</a></li>
-        </ul>
+        <img
+          onclick='document.getElementById("sidebar")
+        .classList.add("active")'
+          class="menu-icon"
+          src="assests/menu.svg"
+          alt=""
+        />
+        <div class="sidebar" id="sidebar">
+          <span
+            onclick='document.getElementById("sidebar")
+          .classList.remove("active")'
+            class="close-menu"
+            >X</span
+          >
+          <ul class="nav-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Feature</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Testimonial</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
 
-        <div class="auth-buttons">
-          <button class="btn transparent">Sign In</button>
-          <button class="btn outline">Sign Up</button>
+          <div class="auth-buttons">
+            <button class="btn transparent">Sign In</button>
+            <button class="btn outline">Sign Up</button>
+          </div>
         </div>
       </nav>
     </header>
